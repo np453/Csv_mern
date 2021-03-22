@@ -45,7 +45,7 @@ class Homepage extends Component {
             }
         }
         // console.log(data)
-        const {data:csv_data} = await axios.post('http://localhost:1919/api/csv',data,config);
+        const {data:csv_data} = await axios.post('/api/csv',data,config);
         console.log(csv_data)
         this.setState({csv_data:csv_data});
         this.setState({showdata:true});
